@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "mejorOferta",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mejorPostor",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ofertar",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "Subasta - Una subasta donde gana la mejor oferta",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"mejorOferta()": {
+					"notice": "Valor de la mejor oferta actual"
+				},
+				"mejorPostor()": {
+					"notice": "Dirección del mejor postor actual"
+				},
+				"ofertar()": {
+					"notice": "Permite ofertar y reemplazar la mejor oferta anterior"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SimpleAuction.sol": "Subasta"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SimpleAuction.sol": {
+			"keccak256": "0xd6c09dd8daa9fb90afd71a7c9e63948016bbc6c78e29487a325549bc8c0dcd5e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fb7d566d68e97dc95d4d1b4a2ede00539bf012390dba36109dd71be777daa429",
+				"dweb:/ipfs/QmemZDEFiqorUsCmimjjh6SSex9NAWo2xWZ16ndGe6Byt5"
+			]
+		}
+	},
+	"version": 1
+}

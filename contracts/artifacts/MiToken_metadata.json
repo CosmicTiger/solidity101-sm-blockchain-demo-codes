@@ -1,0 +1,179 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"transfer(address,uint256)": {
+					"params": {
+						"amount": "Cantidad de tokens a transferir",
+						"to": "Dirección de destino"
+					},
+					"returns": {
+						"_0": "bool Indica si la transferencia fue exitosa"
+					}
+				}
+			},
+			"title": "MiToken - Un token ERC20 básico de ejemplo",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"balances(address)": {
+					"notice": "Mapeo de balances por dirección"
+				},
+				"constructor": {
+					"notice": "Constructor: asigna todo el suministro inicial al creador del contrato"
+				},
+				"decimals()": {
+					"notice": "Decimales que usa el token (por convención 18)"
+				},
+				"name()": {
+					"notice": "Nombre del token"
+				},
+				"symbol()": {
+					"notice": "Símbolo del token"
+				},
+				"totalSupply()": {
+					"notice": "Suministro total del token"
+				},
+				"transfer(address,uint256)": {
+					"notice": "Transfiere tokens a otra dirección"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BasicERC20.sol": "MiToken"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BasicERC20.sol": {
+			"keccak256": "0x3c64c0fe290a586f53f4838c5de64749c19a23661da2e588f2f7962760f7c46a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1c13d70d70dbdb4194dd9d4cf1848522ba51fdaf2da0adf8e8125eb68c23d201",
+				"dweb:/ipfs/Qmecs3yiHuGWgsPtCQsQrzPYLU3qDNz9Q1QyuvydzZn8Px"
+			]
+		}
+	},
+	"version": 1
+}

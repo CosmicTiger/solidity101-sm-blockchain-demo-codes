@@ -1,0 +1,151 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner2",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "confirmacion1",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "confirmacion2",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "confirmar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ejecutar",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner2",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"params": {
+						"_owner2": "Dirección del segundo propietario"
+					}
+				},
+				"ejecutar()": {
+					"returns": {
+						"_0": "string Mensaje de éxito si ambos confirmaron"
+					}
+				}
+			},
+			"title": "Multisig - Contrato simple que requiere aprobación de 2 dueños",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"confirmar()": {
+					"notice": "Permite a cada dueño confirmar su aprobación"
+				},
+				"constructor": {
+					"notice": "Constructor: define a ambos propietarios"
+				},
+				"ejecutar()": {
+					"notice": "Ejecuta una acción solo si ambos confirmaron"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BasicMultisigContract.sol": "Multisig"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BasicMultisigContract.sol": {
+			"keccak256": "0xeab1ace4b4df41a9d592118b2f5b8a2a0f798864a0cb2a50c753c6a68c00107c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c253d9bbfb893723b631ee4d335ed90ffb7ae76618c40378433d3e1ea675bd83",
+				"dweb:/ipfs/QmarTadBcpUa1c165omXgHBQ6sfpo5ripZBpYiJkhxAZaq"
+			]
+		}
+	},
+	"version": 1
+}

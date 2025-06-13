@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getMyNFTs",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalTokens",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getMyNFTs()": {
+					"returns": {
+						"_0": "Lista de IDs"
+					}
+				}
+			},
+			"title": "MiNFT - Un contrato NFT simplificado",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getMyNFTs()": {
+					"notice": "Devuelve todos los IDs de NFTs que posee el usuario"
+				},
+				"mint()": {
+					"notice": "Crea un nuevo NFT y lo asigna al remitente"
+				},
+				"ownerOf(uint256)": {
+					"notice": "Mapeo que indica quién es dueño de qué token"
+				},
+				"totalTokens()": {
+					"notice": "Total de tokens creados"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BasicERC721Simplified.sol": "MiNFT"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BasicERC721Simplified.sol": {
+			"keccak256": "0xc49504d94067f0231981a723ed8a1f66b94539e9dfb85f93826d38092313987f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8ba05882872ed6a5573f4448dc6f35236ee6188bb76b83a274cde50dc1ec5d17",
+				"dweb:/ipfs/QmcMg5amaJU2fZGABgVJzxTZ2pqoFGL6SsTc76Xerx8fms"
+			]
+		}
+	},
+	"version": 1
+}

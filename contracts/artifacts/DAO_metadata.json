@@ -1,0 +1,124 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "haVotado",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "aFavor",
+						"type": "bool"
+					}
+				],
+				"name": "votar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "votosAFavor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "votosEnContra",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"votar(bool)": {
+					"params": {
+						"aFavor": "Indica si el voto es a favor o en contra"
+					}
+				}
+			},
+			"title": "DAO - Contrato de votación simple para una DAO",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"haVotado(address)": {
+					"notice": "Guarda si una dirección ya ha votado"
+				},
+				"votar(bool)": {
+					"notice": "Permite votar una sola vez por usuario"
+				},
+				"votosAFavor()": {
+					"notice": "Contador de votos a favor"
+				},
+				"votosEnContra()": {
+					"notice": "Contador de votos en contra"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SimpleVoteDaoContract.sol": "DAO"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SimpleVoteDaoContract.sol": {
+			"keccak256": "0x9887defc317b17118f3692447c793769fbfcf8c20c6b4aa1c54965f697dab0fb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3d7807e87d29987b8780d5217be174fb2f9b46d79c33bcd68d0050a83c93fe42",
+				"dweb:/ipfs/QmNrynD7HpY1qM94UF7mXvEfQm9FFCazfNegkht6KPGYr7"
+			]
+		}
+	},
+	"version": 1
+}
